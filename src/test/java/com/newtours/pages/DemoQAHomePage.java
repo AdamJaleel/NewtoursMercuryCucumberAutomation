@@ -6,19 +6,19 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.newtours.utilities.Base;
 
-public class HomePage extends Base {
+public class DemoQAHomePage extends Base {
 	
-	public HomePage(){
+	public DemoQAHomePage(){
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(name = "userName")
-	public WebElement userName;
-	
-	@FindBy(name = "password")
-	public WebElement passWord;
-	
-	@FindBy(name = "login")
-	public WebElement loginButton;
+	@FindBy(linkText = "Registration")
+	public WebElement registrationLink;
+//	
+//	@FindBy(name = "password")
+//	public WebElement passWord;
+//	
+//	@FindBy(name = "login")
+//	public WebElement loginButton;
 
 }

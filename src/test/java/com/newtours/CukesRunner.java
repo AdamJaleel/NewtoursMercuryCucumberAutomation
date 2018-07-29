@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(dryRun = false)
+@CucumberOptions(dryRun = false, tags = {"@Smoke"})
 public class CukesRunner {
 
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 
 public class Browser extends Base {
 
-	public static void verifyText(String text) {
+	public static void verifyDisplayed(String text) {
 		
 		if (text.isEmpty()) {
 			fail("text cannot be empty");
